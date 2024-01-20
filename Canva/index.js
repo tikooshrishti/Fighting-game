@@ -39,7 +39,6 @@ velocity: {
 })
 player.draw()
 
-
 const enemy = new Sprite({
   position:{
   x:400,
@@ -53,6 +52,14 @@ velocity: {
 enemy.draw()
 console.log(player)
 
+const keys = {
+  a: {
+    pressed:false
+  },
+  d: {
+    pressed:false
+  }
+}
 function animate(){
   window.requestAnimationFrame(animate)
   c.fillStyle = 'black'
